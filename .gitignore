@@ -2,7 +2,7 @@
 *.jar
 .hg/
 .hgignore
-.tags
+tags
 /.lein-*
 /.nrepl-port
 /checkouts
