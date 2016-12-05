@@ -12,7 +12,11 @@
    (lazy-seq
      (cons (digest/md5 (str w n)) (hashes w (inc n))))))
 
-
 (defn -main []
-  (println
-    (apply str (map #(nth % 5) (take 8 (filter five-zeros? (hashes "uqwqemis")))))))
+  (->> (hashes "uqwqemis")
+       (filter five-zeros?)
+       (take 8)
+       (map #(nth % 5))
+       (apply str)))
+
+(-main)
