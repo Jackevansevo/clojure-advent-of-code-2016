@@ -1,6 +1,6 @@
 (ns clojure-advent-of-code-2016.day5part1
-  (:require [digest])
-  (:require [clojure.string :as str]))
+ (:require [digest])
+ (:require [clojure.string :as str]))
 
 
 (defn five-zeros? [h]
